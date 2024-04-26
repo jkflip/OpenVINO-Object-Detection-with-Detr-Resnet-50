@@ -1,2 +1,4 @@
 *
 !.gitignore
+!coco_labels.txt
+!model.lst
