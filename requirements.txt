@@ -1,0 +1,7 @@
+black==24.4.1
+openvino-dev==2024.0.0
+opencv-python==4.9.0.80
+uvicorn==0.24.0
+onnx==1.16.0
+torch==2.3.0
+torchvision==0.18.0
