@@ -2,6 +2,19 @@
 
 This is a simple example of utilizing OpenVINO to perform object detection onan image using the detr-resnet50 model.
 
+## How to run
+1.  Run the inference with default image
+    ```bash
+    python3 openvino_detr_resnet50.py --image_path demo/sample.jpg
+    ```
+    The output image will be saved as `output_image.jpg` and the inference results will be shown in the terminal.
+
+    To see available options, enter:
+    ```bash
+    python3 openvino_detr_resnet50.py --help
+    ```
+
+## Setup virtual environment and models
 
 1.  Setup environment
     ```bash
@@ -17,21 +30,6 @@ This is a simple example of utilizing OpenVINO to perform object detection onan 
     ```bash
     .script/convert-pth-model.sh
     ```
-
-4.  Run the inference
-    ```bash
-    source venv/bin/activate
-    python3 openvino_detr_resnet50.py
-    ```
-    The inference results will be shown in the terminal and the output image will be saved as `output_image.jpg`.
-
-    By default, the script is set to inference a sample image from `demo` folder.
-
-    To see options, enter:
-    ```bash
-    python3 openvino_detr_resnet50.py --help
-    ```
-
 
 ## Reference
 
